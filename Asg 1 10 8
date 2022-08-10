@@ -1,0 +1,34 @@
+#include<stdio.h>
+int main()
+{
+    int n,r,x,y,c=1,k=0;   
+    printf("enter x and y values :");
+    scanf("%d%d",&x,&y);
+    printf("enter n value: ");
+     scanf("%d",&n);
+     while(n!=0)
+     {
+         r=n%10;
+         if(r==x)
+         k=k+(y*c);
+         else
+         k=k+(r*c);
+         c=c*10;
+         n=n/10;
+     }
+     printf("%d",k);
+     return(0);
+}
+
+output 1----
+enter x and y values :1
+7
+enter n value: 16918
+76978
+
+
+output 2----
+enter x and y values :3
+9
+enter n value: 12345
+12945
