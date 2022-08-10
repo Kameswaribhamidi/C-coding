@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+  int n,r,s=0,k;
+  printf("enter n value: ");
+  scanf("%d",&n);
+  k=n;
+  while(n!=0)
+  {
+      r=n%10;
+      s=s+r;
+      n=n/10;
+  }
+  if(k%s==0)
+  printf("Harshad number");
+  else
+  printf("Not harshad number");
+  return(0);
+}
+
+
+output 1:---
+enter n value: 156
+Harshad number
+
+output 2 ------
+enter n value: 28
+Not harshad number
