@@ -1,0 +1,24 @@
+include<stdio.h>
+void main()
+{
+    int a[10],i,j,flag,n;
+    printf("enter n value: ");
+    scanf("%d",&n);
+    printf("enter elements into array: ");
+    for(i=0;i<n;i++)
+    scanf("%d",&a[i]);
+    for(i=n;i>0;i--)
+    {
+        for(j=2;j<a[i];j++)
+        {
+            flag=0;
+            if(a[i]%j==0)
+            {
+                flag=1;
+                break;
+            }
+        }
+        if(flag==0||a[i]==2)
+        printf("%d\t",a[i]);
+    }
+}
