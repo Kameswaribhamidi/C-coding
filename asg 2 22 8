@@ -1,0 +1,47 @@
+#include<stdio.h>
+void main()
+{
+	int a[100][100];
+	int i,j,r,c,sum,k;
+	printf("Enter how many rows \n");
+	scanf("%d",&r);
+	printf("Enter how many cols \n");
+	scanf("%d",&c);
+scanf("%d",& k);
+	printf("Enter elements into array \n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	
+	for(i=0;i<r;i++)
+	{
+sum=0;
+		for(j=0;j<c;j++)
+		{
+			sum=sum+a[j][i]	;
+		}
+    if(i==k)
+		printf(" %d col sum= %d \n",i+1,sum);		
+	}
+}
+output----
+ow many rows
+3
+Enter how many cols
+3
+2
+Enter elements into array
+11
+12
+13
+14
+15
+22
+23
+24
+34
+ 3 col sum= 69
