@@ -1,0 +1,52 @@
+#include<stdio.h>
+void main()
+{
+	int a[100][100];
+	int i,j,r,c,sum,k;
+	
+	// reading 
+	printf("Enter how many rows \n");
+	scanf("%d",&r);
+	printf("Enter how many cols \n");
+	scanf("%d",&c);
+printf("Enterk value: ");
+scanf("%d",&k);
+	printf("Enter elements into array \n");
+	for(i=0;i<r;i++)
+	{
+		for(j=0;j<c;j++)
+		{
+			scanf("%d",&a[i][j]);
+		}
+	}
+	
+	// printing col sum
+	for(j=0;j<c;j++)//i=0
+	{
+		sum=0;
+		for(i=0;i<r;i++) // j=0,1,2  "3times"
+		{
+			sum=sum+a[j][i]	;
+		}
+if(j==k)
+		printf(" %d row sum= %d \n",j+1,sum);		
+	}
+	
+}
+output----
+Enter how many rows
+3
+Enter how many cols
+3
+Enterk value: 1
+Enter elements into array
+11
+12
+13
+14
+15
+22
+23
+24
+34
+ 2 row sum= 51
