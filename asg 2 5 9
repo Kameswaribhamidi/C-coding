@@ -1,0 +1,28 @@
+#include<stdio.h>
+void display(int x[],int start,int end)
+{
+if(start>end)
+return;
+else
+printf("%d  ",x[start]);
+display(x,start+1,end);
+}
+void main()
+{
+int x[20],i,n;
+printf("enter size\n");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+scanf("%d",&x[i]);
+int len=n-1;
+display(x,0,len);
+}
+output---
+enter size
+5
+1
+2
+3
+4
+5
+1  2  3  4  5
